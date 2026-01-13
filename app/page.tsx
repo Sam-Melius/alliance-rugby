@@ -5,7 +5,7 @@ export default function Home() {
         Local Rugby Club
       </h1>
       <p className="text-lg text-gray-300">
-        Community. Discipline. Hard hits. Coming soon.
+        Community. Discipline. Hard hits. Coming soon!
       </p>
     </main>
   );
