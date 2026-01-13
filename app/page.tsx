@@ -17,7 +17,7 @@ export default function HomePage() {
             The Alliance Black Knights are a local rugby club committed to
             developing tough, smart players on and off the pitch. From first
             tackles to match-winning conversions, we play fast, physical, and
-            together.
+            together!
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
