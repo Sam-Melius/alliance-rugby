@@ -72,18 +72,18 @@ export default function HomePage() {
 
           {[
             {
-              label: "VARSITY",
-              href: "/schedule/varsity",
+              label: "MENS",
+              href: "/schedule/mens",
               blurb: "Top-division fixtures and results.",
             },
             {
-              label: "JV",
-              href: "/schedule/jv",
+              label: "HIGH SCHOOL",
+              href: "/schedule/highschool",
               blurb: "Development squad matches.",
             },
             {
-              label: "MIDDLE SCHOOL",
-              href: "/schedule/middle-school",
+              label: "YOUTH",
+              href: "/schedule/youth",
               blurb: "Future Knights learning the game.",
             },
           ].map((card) => (
