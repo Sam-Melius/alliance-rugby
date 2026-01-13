@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
-import Image from "next/image";
+import { Header } from "./components/Header"; // 👈 import
+// no need to import Link/Image here anymore
 
 export const metadata: Metadata = {
   title: "Alliance Black Knights Rugby",
-  description: "Alliance Black Knights Rugby Club – community rugby built on grit, discipline, and brotherhood.",
+  description:
+    "Alliance Black Knights Rugby Club – community rugby built on grit, discipline, and brotherhood.",
 };
 
 export default function RootLayout({
@@ -17,47 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black text-white min-h-screen flex flex-col">
         {/* Header / Nav */}
-        <header id="site-header" className="fixed top-0 z-50 w-full transition-all duration-300">
-          <div className="mx-auto flex items-center justify-between px-4 py-3">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="relative h-12 w-10">
-                <Image
-                  src="/alliance-shield.png"
-                  alt="Alliance Black Knights Rugby logo"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-              <div className="leading-tight">
-                <div className="text-md uppercase font-semibold tracking-[0.25em] text-gray-300">
-                  Alliance Black Knights 
-                </div>
-                <div className="text-lg tracking-wide">
-                  Rugby
-                </div>
-              </div>
-            </Link>
-
-            <nav className="hidden gap-6 text-sm font-medium md:flex">
-              <Link href="#schedule" className="hover:text-yellow-400">
-                Schedule
-              </Link>
-              <Link href="#team" className="hover:text-yellow-400">
-                Team
-              </Link>
-              <Link href="#sponsors" className="hover:text-yellow-400">
-                Sponsors
-              </Link>
-              <Link href="#contact" className="hover:text-yellow-400">
-                Contact
-              </Link>
-            </nav>
-          </div>
-        </header>
+        <Header />
 
         {/* Page content */}
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pt-16">{children}</main>
 
         {/* Footer */}
         <footer className="border-t border-gray-800 bg-black py-6 text-xs text-gray-400">
@@ -73,23 +37,6 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
-        <script
-  dangerouslySetInnerHTML={{
-    __html: `
-      const header = document.getElementById('site-header');
-      const handleScroll = () => {
-        if (window.scrollY > 20) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-      };
-      window.addEventListener('scroll', handleScroll);
-      handleScroll();
-    `,
-  }}
-/>
-
       </body>
     </html>
   );
