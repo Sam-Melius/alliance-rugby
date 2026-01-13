@@ -4,13 +4,10 @@ import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 export default function HomePage() {
   return (
-    <div className="mx-auto max-w-6xl px-4">
+    <div className="mx-auto max-w-6xl px-4 my-5">
       {/* HERO */}
       <section className="flex flex-col items-center gap-8 py-12 md:flex-row md:py-16">
         <div className="flex-1">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-yellow-400">
-            Alliance Black Knights Rugby
-          </p>
           <h1 className="mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">
             Built on{" "}
             <span className="text-yellow-400">grit, discipline,</span> and{" "}
@@ -71,39 +68,61 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-3 place-items-center">
+
           {[
             {
-              label: "Varsity",
+              label: "VARSITY",
               href: "/schedule/varsity",
               blurb: "Top-division fixtures and results.",
             },
             {
               label: "JV",
               href: "/schedule/jv",
-              blurb: "Development squad matches and growth.",
+              blurb: "Development squad matches.",
             },
             {
-              label: "Middle School",
+              label: "MIDDLE SCHOOL",
               href: "/schedule/middle-school",
               blurb: "Future Knights learning the game.",
             },
           ].map((card) => (
-            <Link
-              key={card.label}
-              href={card.href}
-              className="group flex flex-col justify-between rounded-xl border border-gray-800 bg-gradient-to-b from-gray-900/80 to-black p-5 shadow hover:border-yellow-400"
-            >
-              <div>
-                <h3 className="text-lg font-semibold group-hover:text-yellow-400">
-                  {card.label} Schedule &amp; Results
-                </h3>
-                <p className="mt-2 text-sm text-gray-400">{card.blurb}</p>
-              </div>
-              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400">
-                View Details →
-              </p>
-            </Link>
+<div key={card.label} className="flex flex-col items-center gap-3 text-center">
+  <Link
+    href={card.href}
+    className="group flex flex-col items-center justify-center rounded-full border border-gray-800 bg-gradient-to-b from-gray-900 to-black h-64 w-64 shadow hover:border-yellow-400 hover:scale-105 transition relative"
+  >
+    <div className="relative h-20 w-20">
+      <Image
+        src="/alliance-shield.png"
+        alt="Alliance Shield Logo"
+        fill
+        className="object-contain"
+        sizes="80px"
+        priority
+      />
+    </div>
+
+    <h3 className="mt-2 text-sm font-semibold text-yellow-400">
+      {card.label}
+    </h3>
+  </Link>
+
+  <p className="max-w-[12rem] text-xs text-gray-400 leading-relaxed">
+    {card.blurb}
+  </p>
+
+  <Link
+    href={card.href}
+    className="text-xs font-semibold uppercase tracking-wide text-yellow-400 hover:underline"
+  >
+    View Details →
+  </Link>
+</div>
+
+
+
+
           ))}
         </div>
       </section>
@@ -244,56 +263,46 @@ export default function HomePage() {
                 <span>Off</span>
               </div>
             </div>
-
-<div className="flex gap-6 text-2xl">
-  <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-    <FaInstagram />
-  </a>
-  <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-    <FaFacebook />
-  </a>
-  <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-    <FaYoutube />
-  </a>
-</div>
           </div>
         </div>
       </section>
-      {/* SOCIAL STRIP */}
-<section className="border-t border-gray-800 bg-black py-8">
-  <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 text-center sm:flex-row sm:justify-between">
-    <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-400">
-      Follow the Black Knights
-    </h3>
 
-    <div className="flex gap-6">
-      <a
-        href="https://instagram.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-yellow-400 transition"
-      >
-        Instagram
-      </a>
-      <a
-        href="https://facebook.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-yellow-400 transition"
-      >
-        Facebook
-      </a>
-      <a
-        href="https://youtube.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-yellow-400 transition"
-      >
-        YouTube
-      </a>
-    </div>
-  </div>
-</section>
+      {/* SOCIAL STRIP */}
+    <section className="w-full bg-yellow-400 py-12">
+      <div className="mx-auto max-w-6xl px-4 text-center">
+        <h3 className="mb-6 text-3xl sm:text-4xl font-bold uppercase tracking-wide text-black">
+          Follow the Black Knights
+        </h3>
+
+        <div className="flex justify-center gap-10 text-4xl text-black">
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:scale-110"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:scale-110"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:scale-110"
+          >
+            <FaYoutube />
+          </a>
+        </div>
+      </div>
+    </section>
+
 
     </div>
   );
