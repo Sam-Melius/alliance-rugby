@@ -30,11 +30,11 @@ export default function RootLayout({
                 />
               </div>
               <div className="leading-tight">
-                <div className="text-sm uppercase tracking-[0.25em] text-gray-300">
-                  Alliance
+                <div className="text-md uppercase font-semibold tracking-[0.25em] text-gray-300">
+                  Alliance Black Knights 
                 </div>
-                <div className="text-lg font-semibold tracking-wide">
-                  Black Knights Rugby
+                <div className="text-lg tracking-wide">
+                  Rugby
                 </div>
               </div>
             </Link>
@@ -73,6 +73,23 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      const header = document.getElementById('site-header');
+      const handleScroll = () => {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      };
+      window.addEventListener('scroll', handleScroll);
+      handleScroll();
+    `,
+  }}
+/>
+
       </body>
     </html>
   );
