@@ -17,12 +17,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black text-white min-h-screen flex flex-col">
         {/* Header / Nav */}
-        <header className="sticky top-0 z-50 border-b border-gray-800 bg-black/80 backdrop-blur">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <header id="site-header" className="fixed top-0 z-50 w-full transition-all duration-300">
+          <div className="mx-auto flex items-center justify-between px-4 py-3">
             <Link href="/" className="flex items-center gap-3">
               <div className="relative h-12 w-10">
                 <Image
-                  src="/alliance-logo.png"
+                  src="/alliance-shield.png"
                   alt="Alliance Black Knights Rugby logo"
                   fill
                   className="object-contain"
