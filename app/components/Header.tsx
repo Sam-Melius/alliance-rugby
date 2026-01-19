@@ -28,7 +28,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-12 w-10">
             <Image
-              src="/alliance-shield.png"
+              src="/favicon.ico"
               alt="Alliance Black Knights Rugby logo"
               fill
               className="object-contain"
@@ -44,16 +44,16 @@ export function Header() {
         </Link>
 
         <nav className="hidden gap-6 text-sm font-medium md:flex">
-          <Link href="#schedule" className="hover:text-yellow-400">
+          <Link href="/#schedule" className="hover:text-yellow-400">
             Schedule
           </Link>
-          <Link href="#team" className="hover:text-yellow-400">
+          <Link href="/#team" className="hover:text-yellow-400">
             Team
           </Link>
-          <Link href="#sponsors" className="hover:text-yellow-400">
+          <Link href="/#sponsors" className="hover:text-yellow-400">
             Sponsors
           </Link>
-          <Link href="#contact" className="hover:text-yellow-400">
+          <Link href="/#contact" className="hover:text-yellow-400">
             Contact
           </Link>
         </nav>
