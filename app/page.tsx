@@ -109,7 +109,7 @@ export default function HomePage() {
               >
                 <div className="relative h-20 w-20">
                   <Image
-                    src="/alliance-shield.png"
+                    src="/favicon.ico"
                     alt="Alliance Shield Logo"
                     fill
                     className="object-contain"
