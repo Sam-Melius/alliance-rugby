@@ -103,8 +103,8 @@ export default function HomePage() {
             },
           ].map((card) => (
             <div key={card.label} className="flex flex-col items-center gap-3 text-center">
-              <Link
-                href={card.href}
+              <div
+                // href={card.href}
                 className="group flex flex-col items-center justify-center rounded-full border border-gray-800 bg-gradient-to-b from-gray-900 to-black h-64 w-64 shadow hover:border-yellow-400 hover:scale-105 transition relative"
               >
                 <div className="relative h-20 w-20">
@@ -121,18 +121,18 @@ export default function HomePage() {
                 <h3 className="mt-2 text-sm font-semibold text-yellow-400">
                   {card.label}
                 </h3>
-              </Link>
+              </div>
 
               <p className="max-w-[12rem] text-xs text-gray-400 leading-relaxed">
                 {card.blurb}
               </p>
 
-              <Link
+              {/* <div
                 href={card.href}
                 className="text-xs font-semibold uppercase tracking-wide text-yellow-400 hover:underline"
               >
                 View Details →
-              </Link>
+              </div> */}
             </div>
           ))}
         </div>
@@ -259,7 +259,7 @@ export default function HomePage() {
         </p>
       </section>
 
- {/* CONTACT + PRACTICE INFO */}
+{/* CONTACT + PRACTICE INFO */}
 <section id="contact" className="border-t border-gray-800 py-12">
   <div className="mb-6 text-center">
     <h2 className="text-2xl font-bold sm:text-3xl">Get In Touch</h2>
@@ -272,10 +272,35 @@ export default function HomePage() {
     {/* Contact Card */}
     <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-6">
       <h3 className="text-lg font-semibold text-yellow-400">Contact</h3>
-      <p className="mt-2 text-sm text-gray-300">
+      {/* <p className="mt-2 text-sm text-gray-300">
         Coach Doug &quot;Neuby&quot; Neubauer
       </p>
-      <p className="text-sm text-gray-400">817-360-5368</p>
+      <p className="text-sm text-gray-300">
+        <a
+          href="tel:18173605368"
+          className="hover:text-yellow-400"
+        >
+          817-360-5368
+        </a>
+      </p> */}
+
+      <p className="mt-3 text-sm text-gray-300">
+        Email:&nbsp;
+        <a
+          href="mailto:aaron@sublime.day"
+          className="text-yellow-400 hover:underline"
+        >
+          aaron@sublime.day
+        </a>
+      </p>
+
+      <a
+        href="mailto:aaron@sublime.day"
+        className="mt-5 inline-block rounded-md bg-yellow-400 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-black hover:bg-yellow-300"
+      >
+        Email an Inquiry
+      </a>
+
       <p className="mt-4 text-xs text-gray-500 leading-relaxed">
         Interested in joining the Knights? Reach out for details on training,
         season registration, or development pathways.
