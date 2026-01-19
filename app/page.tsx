@@ -103,8 +103,8 @@ export default function HomePage() {
             },
           ].map((card) => (
             <div key={card.label} className="flex flex-col items-center gap-3 text-center">
-              <div
-                // href={card.href}
+              <Link
+                href={card.href}
                 className="group flex flex-col items-center justify-center rounded-full border border-gray-800 bg-gradient-to-b from-gray-900 to-black h-64 w-64 shadow hover:border-yellow-400 hover:scale-105 transition relative"
               >
                 <div className="relative h-20 w-20">
@@ -121,18 +121,18 @@ export default function HomePage() {
                 <h3 className="mt-2 text-sm font-semibold text-yellow-400">
                   {card.label}
                 </h3>
-              </div>
+              </Link>
 
               <p className="max-w-[12rem] text-xs text-gray-400 leading-relaxed">
                 {card.blurb}
               </p>
 
-              {/* <div
+              <Link
                 href={card.href}
                 className="text-xs font-semibold uppercase tracking-wide text-yellow-400 hover:underline"
               >
                 View Details →
-              </div> */}
+              </Link>
             </div>
           ))}
         </div>
