@@ -77,7 +77,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold sm:text-3xl">
             Match Schedules &amp; Results
           </h2>
-          <p className="mt-2 text-sm text-gray-400">
+          <p className="mt-2 text-sm text-gray-300">
             Stay locked in on upcoming fixtures and how the Knights are doing
             this season.
           </p>
@@ -123,7 +123,7 @@ export default function HomePage() {
                 </h3>
               </Link>
 
-              <p className="max-w-[12rem] text-xs text-gray-400 leading-relaxed">
+              <p className="max-w-[12rem] text-xs text-gray-300 leading-relaxed">
                 {card.blurb}
               </p>
 
@@ -142,7 +142,7 @@ export default function HomePage() {
       <section id="team" className="border-t border-gray-800 py-12">
         <div className="mb-8 text-center">
           <h2 className="text-2xl font-bold sm:text-3xl">Our Team</h2>
-          <p className="mt-2 text-sm text-gray-400 max-w-2xl mx-auto">
+          <p className="mt-2 text-sm text-gray-300 max-w-2xl mx-auto">
             Elite coaching, real pathways, and a culture built on work rate,
             toughness, and character. The Alliance Black Knights staff brings
             top-level playing and coaching experience back to our community.
@@ -156,7 +156,7 @@ export default function HomePage() {
   {/* Doug */}
   <article className="coach-shield flex flex-col items-center text-center px-20 pt-12 pb-10">
     <div className="coach-avatar relative mb-4">
-      <div className="flex h-full w-full items-center justify-center text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gray-400">
+      <div className="flex h-full w-full items-center justify-center text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gray-300">
         Photo Coming Soon
       </div>
       {/* Later you can replace the inner div with an <Image> */}
@@ -171,7 +171,7 @@ export default function HomePage() {
     </div>
 
     <h3 className="text-lg font-semibold text-yellow-400">Doug Neubauer</h3>
-    <p className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-gray-400">
+    <p className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-gray-300">
       High School Head Coach
     </p>
     <p className="mt-2 text-sm text-gray-200 leading-relaxed">
@@ -186,7 +186,7 @@ export default function HomePage() {
   {/* PJ */}
   <article className="coach-shield flex flex-col items-center text-center px-20 pt-12 pb-10">
     <div className="coach-avatar relative mb-4">
-      <div className="flex h-full w-full items-center justify-center text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gray-400">
+      <div className="flex h-full w-full items-center justify-center text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gray-300">
         Photo Coming Soon
       </div>
       {/*
@@ -200,7 +200,7 @@ export default function HomePage() {
     </div>
 
     <h3 className="text-lg font-semibold text-yellow-400">Pj Eteaki</h3>
-    <p className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-gray-400">
+    <p className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-gray-300">
       Director of Rugby
     </p>
     <p className="mt-2 text-sm text-gray-200 leading-relaxed">
@@ -233,12 +233,12 @@ export default function HomePage() {
       <section id="sponsors" className="border-t border-gray-800 py-12">
         <div className="mb-6 text-center">
           <h2 className="text-2xl font-bold sm:text-3xl">Our Sponsors</h2>
-          <p className="mt-2 text-sm text-gray-400">
+          <p className="mt-2 text-sm text-gray-300">
             Alliance is built on support from local businesses and families.
           </p>
         </div>
 
-        <div className="grid gap-4 text-center text-sm text-gray-400 sm:grid-cols-3">
+        <div className="grid gap-4 text-center text-sm text-gray-300 sm:grid-cols-3">
           <div className="rounded-lg border border-gray-800 bg-gray-900/40 p-4">
             Sponsor Logo
           </div>
@@ -250,7 +250,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <p className="mt-4 text-center text-xs text-gray-500">
+        <p className="mt-4 text-center text-xs text-gray-300">
           Want to sponsor the Black Knights?{" "}
           <a href="#contact" className="text-yellow-400 underline">
             Get in touch
@@ -263,7 +263,7 @@ export default function HomePage() {
 <section id="contact" className="border-t border-gray-800 py-12">
   <div className="mb-6 text-center">
     <h2 className="text-2xl font-bold sm:text-3xl">Get In Touch</h2>
-    <p className="mt-2 text-sm text-gray-400">
+    <p className="mt-2 text-sm text-gray-300">
       Training, recruitment, and program info
     </p>
   </div>
@@ -301,7 +301,7 @@ export default function HomePage() {
         Email an Inquiry
       </a>
 
-      <p className="mt-4 text-xs text-gray-500 leading-relaxed">
+      <p className="mt-4 text-xs text-gray-300 leading-relaxed">
         Interested in joining the Knights? Reach out for details on training,
         season registration, or development pathways.
       </p>
@@ -312,21 +312,21 @@ export default function HomePage() {
       <h3 className="text-lg font-semibold text-yellow-400">Training Schedule</h3>
       <div className="mt-3 space-y-1 text-sm text-gray-300">
         <div className="flex justify-between">
-          <span className="text-gray-400">Tuesday</span>
+          <span className="text-gray-300">Tuesday</span>
           <span>6:30 pm – 8:00 pm</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-400">Thursday</span>
+          <span className="text-gray-300">Thursday</span>
           <span>6:30 pm – 8:00 pm</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-400">Saturday</span>
+          <span className="text-gray-300">Saturday</span>
           <span>10:00 am – 12:00 pm</span>
         </div>
       </div>
 
       <h3 className="mt-6 text-lg font-semibold text-white">Location</h3>
-      <p className="mt-2 text-sm text-gray-400">
+      <p className="mt-2 text-sm text-gray-300">
         Bear Creek Park <br />
         Keller, TX
       </p>
