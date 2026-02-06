@@ -284,7 +284,7 @@ export default function HomePage() {
         </a>
       </p> */}
 
-      <p className="mt-3 text-sm text-gray-300">
+      {/* <p className="mt-3 text-sm text-gray-300">
         Email:&nbsp;
         <a
           href="mailto:aaron@sublime.day"
@@ -292,7 +292,7 @@ export default function HomePage() {
         >
           aaron@sublime.day
         </a>
-      </p>
+      </p> */}
 
       <a
         href="mailto:aaron@sublime.day"
